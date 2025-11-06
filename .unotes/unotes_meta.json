@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "app": {
+      "name": "app",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "public": {
+      "name": "public",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    }
+  },
+  "files": {
+    "README": 0
+  }
+}
