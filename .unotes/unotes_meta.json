@@ -13,6 +13,14 @@
       "isOrdered": true,
       "folders": {},
       "files": {}
+    },
+    "my-notes": {
+      "name": "my-notes",
+      "isOrdered": true,
+      "folders": {},
+      "files": {
+        "11_MutatingData": 0
+      }
     }
   },
   "files": {
