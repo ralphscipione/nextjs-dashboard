@@ -1,16 +1,16 @@
 'use client';
-
+import { updateInvoice, State } from '@/app/lib/actions';
+import { useActionState } from 'react';
 import { CustomerField, InvoiceForm } from '@/app/lib/definitions';
+import Link from 'next/link';
 import {
   CheckIcon,
   ClockIcon,
   CurrencyDollarIcon,
   UserCircleIcon,
 } from '@heroicons/react/24/outline';
-import Link from 'next/link';
 import { Button } from '@/app/ui/button';
-import { updateInvoice } from '@/app/lib/actions';
-import { useActionState } from 'react';
+import { init } from 'next/dist/compiled/webpack/webpack';
 
 export default function EditInvoiceForm({
   invoice,
@@ -19,7 +19,9 @@ export default function EditInvoiceForm({
   invoice: InvoiceForm;
   customers: CustomerField[];
 }) {
-  const initialState = { message: null, errors: {} };
+  // const initialState = { message: null, errors: {} };
+  const initialState: State = { message: null, errors: {} };
+
   const [state, formAction] = useActionState(updateInvoice, initialState);
 
   return (
